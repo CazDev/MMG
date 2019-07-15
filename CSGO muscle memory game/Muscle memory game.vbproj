@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CAC0C679-0E3F-4517-A495-DB9BE228E3AC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Muscle_memory_game.My.MyApplication</StartupObject>
+    <RootNamespace>Muscle_memory_game</RootNamespace>
+    <AssemblyName>Muscle memory game</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Muscle memory game.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Muscle memory game.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>bin\Debug\embedded dlls\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="coreaudio">
+      <HintPath>bin\Debug\embedded dlls\coreaudio.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Circles\circle2.Designer.vb">
+      <DependentUpon>circle2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Circles\circle2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Circles\circle3.Designer.vb">
+      <DependentUpon>circle3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Circles\circle3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLinearPrefs.Designer.vb">
+      <DependentUpon>FrmLinearPrefs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmLinearPrefs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameConfig.vb" />
+    <Compile Include="GameEvents.vb" />
+    <Compile Include="Forms\FrmGame.Designer.vb">
+      <DependentUpon>FrmGame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmGame.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmHighScores.Designer.vb">
+      <DependentUpon>FrmHighScores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmHighScores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmHowtoplay.Designer.vb">
+      <DependentUpon>FrmHowtoplay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmHowtoplay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmLose.Designer.vb">
+      <DependentUpon>FrmLose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmLose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMenu.Designer.vb">
+      <DependentUpon>FrmMenu.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmConsole.Designer.vb">
+      <DependentUpon>FrmConsole.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmConsole.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmMenuSettings.Designer.vb">
+      <DependentUpon>FrmMenuSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmMenuSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmPanel.Designer.vb">
+      <DependentUpon>FrmPanel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmPanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmPreferences.Designer.vb">
+      <DependentUpon>FrmPreferences.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmPreferences.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GameVariables.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Circles\circle1.Designer.vb">
+      <DependentUpon>circle1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Circles\circle1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PowerUps\Freeze.Designer.vb">
+      <DependentUpon>Freeze.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PowerUps\Freeze.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PowerUps\LifeUp.Designer.vb">
+      <DependentUpon>LifeUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PowerUps\LifeUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Squares\square1.Designer.vb">
+      <DependentUpon>square1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Squares\square1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Squares\square2.Designer.vb">
+      <DependentUpon>square2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Squares\square2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Squares\square3.Designer.vb">
+      <DependentUpon>square3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Squares\square3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Circles\circle2.resx">
+      <DependentUpon>circle2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Circles\circle3.resx">
+      <DependentUpon>circle3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmGame.resx">
+      <DependentUpon>FrmGame.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmHighScores.resx">
+      <DependentUpon>FrmHighScores.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmHowtoplay.resx">
+      <DependentUpon>FrmHowtoplay.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmLinearPrefs.resx">
+      <DependentUpon>FrmLinearPrefs.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmLose.resx">
+      <DependentUpon>FrmLose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMenu.resx">
+      <DependentUpon>FrmMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmConsole.resx">
+      <DependentUpon>FrmConsole.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmMenuSettings.resx">
+      <DependentUpon>FrmMenuSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmPanel.resx">
+      <DependentUpon>FrmPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmPreferences.resx">
+      <DependentUpon>FrmPreferences.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Circles\circle1.resx">
+      <DependentUpon>circle1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PowerUps\Freeze.resx">
+      <DependentUpon>Freeze.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PowerUps\LifeUp.resx">
+      <DependentUpon>LifeUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Squares\square1.resx">
+      <DependentUpon>square1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Squares\square2.resx">
+      <DependentUpon>square2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Squares\square3.resx">
+      <DependentUpon>square3.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\GrayGradient.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SlowSpiral.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Abstract.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Highscore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CubeSlice.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fail1.wav" />
+    <None Include="Resources\fail2.wav" />
+    <None Include="Resources\fail3.wav" />
+    <None Include="Resources\level1.wav" />
+    <None Include="Resources\level2.wav" />
+    <None Include="Resources\level3.wav" />
+    <None Include="Resources\sound1.wav" />
+    <None Include="Resources\sound2.wav" />
+    <None Include="Resources\sound3.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MMGPlayMusic.exe" />
+    <None Include="FodyWeavers.xml" />
+    <Content Include="icon.ico" />
+    <None Include="Resources\Freeze.wav" />
+    <None Include="Resources\Frozen.png" />
+    <None Include="Resources\Heart.png" />
+    <None Include="Resources\Lose Life.png" />
+    <None Include="Resources\loselife.wav" />
+    <None Include="Resources\click.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <UsingTask TaskName="CosturaCleanup" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" TaskFactory="CodeTaskFactory">
+    <ParameterGroup>
+      <Config Output="false" Required="true" ParameterType="Microsoft.Build.Framework.ITaskItem" />
+      <Files Output="false" Required="true" ParameterType="Microsoft.Build.Framework.ITaskItem[]" />
+    </ParameterGroup>
+    <Task Evaluate="true">
+      <Reference xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Include="System.Xml" />
+      <Reference xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Include="System.Xml.Linq" />
+      <Using xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Namespace="System" />
+      <Using xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Namespace="System.IO" />
+      <Using xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Namespace="System.Xml.Linq" />
+      <Code xmlns="http://schemas.microsoft.com/developer/msbuild/2003" Type="Fragment" Language="cs"><![CDATA[
+var config = XElement.Load(Config.ItemSpec).Elements("Costura").FirstOrDefault();
+
+if (config == null) return true;
+
+var excludedAssemblies = new List<string>();
+var attribute = config.Attribute("ExcludeAssemblies");
+if (attribute != null)
+    foreach (var item in attribute.Value.Split('|').Select(x => x.Trim()).Where(x => x != string.Empty))
+        excludedAssemblies.Add(item);
+var element = config.Element("ExcludeAssemblies");
+if (element != null)
+    foreach (var item in element.Value.Split(new[] { "\r\n", "\n" }, StringSplitOptions.RemoveEmptyEntries).Select(x => x.Trim()).Where(x => x != string.Empty))
+        excludedAssemblies.Add(item);
+
+var filesToCleanup = Files.Select(f => f.ItemSpec).Where(f => !excludedAssemblies.Contains(Path.GetFileNameWithoutExtension(f), StringComparer.InvariantCultureIgnoreCase));
+
+foreach (var item in filesToCleanup)
+  File.Delete(item);
+]]></Code>
+    </Task>
+  </UsingTask>
+  <Target Name="CleanReferenceCopyLocalPaths" AfterTargets="AfterBuild;NonWinFodyTarget">
+    <CosturaCleanup Config="FodyWeavers.xml" Files="@(ReferenceCopyLocalPaths->'$(OutDir)%(DestinationSubDirectory)%(Filename)%(Extension)')" />
+  </Target>
+  <Import Project="..\packages\Fody.2.0.10\build\portable-net+sl+win+wpa+wp\Fody.targets" Condition="Exists('..\packages\Fody.2.0.10\build\portable-net+sl+win+wpa+wp\Fody.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Fody.2.0.10\build\portable-net+sl+win+wpa+wp\Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Fody.2.0.10\build\portable-net+sl+win+wpa+wp\Fody.targets'))" />
+    <Error Condition="!Exists('..\packages\Costura.Fody.1.5.1\build\portable-net+sl+win+wpa+wp\Costura.Fody.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Costura.Fody.1.5.1\build\portable-net+sl+win+wpa+wp\Costura.Fody.targets'))" />
+  </Target>
+  <Import Project="..\packages\Costura.Fody.1.5.1\build\portable-net+sl+win+wpa+wp\Costura.Fody.targets" Condition="Exists('..\packages\Costura.Fody.1.5.1\build\portable-net+sl+win+wpa+wp\Costura.Fody.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

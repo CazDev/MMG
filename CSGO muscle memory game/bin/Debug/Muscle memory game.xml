@@ -1,0 +1,136 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Muscle memory game
+</name>
+</assembly>
+<members>
+<member name="T:Muscle_memory_game.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.Abstract">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.click">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.CubeSlice">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.fail1">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.fail2">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.fail3">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.freeze">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.Freeze1">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.Frozen">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.GrayGradient">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.heart">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.Highscore">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.level1">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.level2">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.level3">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.Lose_Life">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.loselife">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.MMGPlayMusic">
+<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.SlowSpiral">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.sound1">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.sound2">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:Muscle_memory_game.My.Resources.Resources.sound3">
+<summary>
+  Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+</summary>
+</member>
+</members>
+</doc>
